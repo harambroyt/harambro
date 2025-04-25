@@ -16,6 +16,27 @@
 </head>
 
 <body>
+    
+  <nav>
+      <ul>
+         <li class="logo">Haram Bro</li>
+         <li class="items"><a href="#">Home</a></li>
+         <li class="items"><a href="#">Agario Mod</a></li>
+         <li class="items"><a href="#">YouTube</a></li>
+         <li class="items"><a href="#">İnstagram</a></li>
+         <li class="items"><a href="#">Discord</a></li>
+         <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+      </ul>
+   </nav>
+   <script>
+      $(document).ready(function(){
+        $('.btn').click(function(){
+          $('.items').toggleClass("show");
+          $('ul li').toggleClass("hide");
+        });
+      });
+   </script>
+  
   <div class="slide-container swiper">
     <div class="slide-content">
       <div class="card-wrapper swiper-wrapper">
