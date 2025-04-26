@@ -1,339 +1,91 @@
 <!DOCTYPE html>
-<!-- Coding by CodingLab | www.codinglabweb.com -->
+<!-- Coding By CodingNepal - codingnepalweb.com -->
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Card Slider</title>
-  <!-- Boxicons CSS -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+        
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+     <title>Responsive Navigation Menu Bar</title>
 </head>
-
 <body>
-  <!-- navbar -->
-    <nav class="navbar">
-      <div class="logo_item">
-        <i class="bx bx-menu" id="sidebarOpen"></i>
-        <img src="images/logo.png" alt=""></i>CodingNepal
-      </div>
-      <div class="search_bar">
-        <input type="text" placeholder="Search" />
-      </div>
-      <div class="navbar_content">
-        <i class="bi bi-grid"></i>
-        <i class='bx bx-sun' id="darkLight"></i>
-        <i class='bx bx-bell' ></i>
-        <img src="images/profile.jpg" alt="" class="profile" />
-      </div>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo"><a href="#">CodingLab</a></span>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">CodingLab</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+                <div class="searchBox">
+                   <div class="searchToggle">
+                    <i class='bx bx-x cancel'></i>
+                    <i class='bx bx-search search'></i>
+                   </div>
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </nav>
-    <!-- sidebar -->
-    <nav class="sidebar">
-      <div class="menu_content">
-        <ul class="menu_items">
-          <div class="menu_title menu_dahsboard"></div>
-          <!-- duplicate or remove this li tag if you want to add or remove navlink with submenu -->
-          <!-- start -->
-          <li class="item">
-            <div href="#" class="nav_link submenu_item">
-              <span class="navlink_icon">
-                <i class="bx bx-home-alt"></i>
-              </span>
-              <span class="navlink">Home</span>
-              <i class="bx bx-chevron-right arrow-left"></i>
-            </div>
-            <ul class="menu_items submenu">
-              <a href="#" class="nav_link sublink">Nav Sub Link</a>
-              <a href="#" class="nav_link sublink">Nav Sub Link</a>
-              <a href="#" class="nav_link sublink">Nav Sub Link</a>
-              <a href="#" class="nav_link sublink">Nav Sub Link</a>
-            </ul>
-          </li>
-          <!-- end -->
-          <!-- duplicate this li tag if you want to add or remove  navlink with submenu -->
-          <!-- start -->
-          <li class="item">
-            <div href="#" class="nav_link submenu_item">
-              <span class="navlink_icon">
-                <i class="bx bx-grid-alt"></i>
-              </span>
-              <span class="navlink">Overview</span>
-              <i class="bx bx-chevron-right arrow-left"></i>
-            </div>
-            <ul class="menu_items submenu">
-              <a href="#" class="nav_link sublink">Nav Sub Link</a>
-              <a href="#" class="nav_link sublink">Nav Sub Link</a>
-              <a href="#" class="nav_link sublink">Nav Sub Link</a>
-              <a href="#" class="nav_link sublink">Nav Sub Link</a>
-            </ul>
-          </li>
-          <!-- end -->
-        </ul>
-        <ul class="menu_items">
-          <div class="menu_title menu_editor"></div>
-          <!-- duplicate these li tag if you want to add or remove navlink only -->
-          <!-- Start -->
-          <li class="item">
-            <a href="#" class="nav_link">
-              <span class="navlink_icon">
-                <i class="bx bxs-magic-wand"></i>
-              </span>
-              <span class="navlink">Magic build</span>
-            </a>
-          </li>
-          <!-- End -->
-          <li class="item">
-            <a href="#" class="nav_link">
-              <span class="navlink_icon">
-                <i class="bx bx-loader-circle"></i>
-              </span>
-              <span class="navlink">Filters</span>
-            </a>
-          </li>
-          <li class="item">
-            <a href="#" class="nav_link">
-              <span class="navlink_icon">
-                <i class="bx bx-filter"></i>
-              </span>
-              <span class="navlink">Filter</span>
-            </a>
-          </li>
-          <li class="item">
-            <a href="#" class="nav_link">
-              <span class="navlink_icon">
-                <i class="bx bx-cloud-upload"></i>
-              </span>
-              <span class="navlink">Upload new</span>
-            </a>
-          </li>
-        </ul>
-        <ul class="menu_items">
-          <div class="menu_title menu_setting"></div>
-          <li class="item">
-            <a href="#" class="nav_link">
-              <span class="navlink_icon">
-                <i class="bx bx-flag"></i>
-              </span>
-              <span class="navlink">Notice board</span>
-            </a>
-          </li>
-          <li class="item">
-            <a href="#" class="nav_link">
-              <span class="navlink_icon">
-                <i class="bx bx-medal"></i>
-              </span>
-              <span class="navlink">Award</span>
-            </a>
-          </li>
-          <li class="item">
-            <a href="#" class="nav_link">
-              <span class="navlink_icon">
-                <i class="bx bx-cog"></i>
-              </span>
-              <span class="navlink">Setting</span>
-            </a>
-          </li>
-          <li class="item">
-            <a href="#" class="nav_link">
-              <span class="navlink_icon">
-                <i class="bx bx-layer"></i>
-              </span>
-              <span class="navlink">Features</span>
-            </a>
-          </li>
-        </ul>
-        <!-- Sidebar Open / Close -->
-        <div class="bottom_content">
-          <div class="bottom expand_sidebar">
-            <span> Expand</span>
-            <i class='bx bx-log-in' ></i>
-          </div>
-          <div class="bottom collapse_sidebar">
-            <span> Collapse</span>
-            <i class='bx bx-log-out'></i>
-          </div>
-        </div>
-      </div>
-    </nav>
-  
-  <div class="slide-container swiper">
-    <div class="slide-content">
-      <div class="card-wrapper swiper-wrapper">
-        <div class="card swiper-slide">
-          <div class="image-content">
-            <span class="overlay"></span>
-
-            <div class="card-image">
-              <img src="images/profile1.jpg" alt="" class="card-img">
-            </div>
-          </div>
-
-          <div class="card-content">
-            <h2 class="name">David Dell</h2>
-            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
-              dolor sit amet consectetur adipisicing elit.</p>
-
-            <button class="button">View More</button>
-          </div>
-        </div>
-        <div class="card swiper-slide">
-          <div class="image-content">
-            <span class="overlay"></span>
-
-            <div class="card-image">
-              <img src="images/profile2.jpg" alt="" class="card-img">
-            </div>
-          </div>
-
-          <div class="card-content">
-            <h2 class="name">David Dell</h2>
-            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
-              dolor sit amet consectetur adipisicing elit.</p>
-
-            <button class="button">View More</button>
-          </div>
-        </div>
-        <div class="card swiper-slide">
-          <div class="image-content">
-            <span class="overlay"></span>
-
-            <div class="card-image">
-              <img src="images/profile3.jpg" alt="" class="card-img">
-            </div>
-          </div>
-
-          <div class="card-content">
-            <h2 class="name">David Dell</h2>
-            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
-              dolor sit amet consectetur adipisicing elit.</p>
-
-            <button class="button">View More</button>
-          </div>
-        </div>
-        <div class="card swiper-slide">
-          <div class="image-content">
-            <span class="overlay"></span>
-
-            <div class="card-image">
-              <img src="images/profile4.jpg" alt="" class="card-img">
-            </div>
-          </div>
-
-          <div class="card-content">
-            <h2 class="name">David Dell</h2>
-            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
-              dolor sit amet consectetur adipisicing elit.</p>
-
-            <button class="button">View More</button>
-          </div>
-        </div>
-        <div class="card swiper-slide">
-          <div class="image-content">
-            <span class="overlay"></span>
-
-            <div class="card-image">
-              <img src="images/profile5.jpg" alt="" class="card-img">
-            </div>
-          </div>
-
-          <div class="card-content">
-            <h2 class="name">David Dell</h2>
-            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
-              dolor sit amet consectetur adipisicing elit.</p>
-
-            <button class="button">View More</button>
-          </div>
-        </div>
-        <div class="card swiper-slide">
-          <div class="image-content">
-            <span class="overlay"></span>
-
-            <div class="card-image">
-              <img src="images/profile6.jpg" alt="" class="card-img">
-            </div>
-          </div>
-
-          <div class="card-content">
-            <h2 class="name">David Dell</h2>
-            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
-              dolor sit amet consectetur adipisicing elit.</p>
-
-            <button class="button">View More</button>
-          </div>
-        </div>
-        <div class="card swiper-slide">
-          <div class="image-content">
-            <span class="overlay"></span>
-
-            <div class="card-image">
-              <img src="images/profile7.jpg" alt="" class="card-img">
-            </div>
-          </div>
-
-          <div class="card-content">
-            <h2 class="name">David Dell</h2>
-            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
-              dolor sit amet consectetur adipisicing elit.</p>
-
-            <button class="button">View More</button>
-          </div>
-        </div>
-        <div class="card swiper-slide">
-          <div class="image-content">
-            <span class="overlay"></span>
-
-            <div class="card-image">
-              <img src="images/profile8.jpg" alt="" class="card-img">
-            </div>
-          </div>
-
-          <div class="card-content">
-            <h2 class="name">David Dell</h2>
-            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
-              dolor sit amet consectetur adipisicing elit.</p>
-
-            <button class="button">View More</button>
-          </div>
-        </div>
-        <div class="card swiper-slide">
-          <div class="image-content">
-            <span class="overlay"></span>
-
-            <div class="card-image">
-              <img src="images/profile9.jpg" alt="" class="card-img">
-            </div>
-          </div>
-
-          <div class="card-content">
-            <h2 class="name">David Dell</h2>
-            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
-              dolor sit amet consectetur adipisicing elit.</p>
-
-            <button class="button">View More</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="swiper-button-next swiper-navBtn"></div>
-    <div class="swiper-button-prev swiper-navBtn"></div>
-    <div class="swiper-pagination"></div>
-  </div>
-
+<script>
+const body = document.querySelector("body"),
+      nav = document.querySelector("nav"),
+      modeToggle = document.querySelector(".dark-light"),
+      searchToggle = document.querySelector(".searchToggle"),
+      sidebarOpen = document.querySelector(".sidebarOpen"),
+      siderbarClose = document.querySelector(".siderbarClose");
+      let getMode = localStorage.getItem("mode");
+          if(getMode && getMode === "dark-mode"){
+            body.classList.add("dark");
+          }
+// js code to toggle dark and light mode
+      modeToggle.addEventListener("click" , () =>{
+        modeToggle.classList.toggle("active");
+        body.classList.toggle("dark");
+        // js code to keep user selected mode even page refresh or file reopen
+        if(!body.classList.contains("dark")){
+            localStorage.setItem("mode" , "light-mode");
+        }else{
+            localStorage.setItem("mode" , "dark-mode");
+        }
+      });
+// js code to toggle search box
+        searchToggle.addEventListener("click" , () =>{
+        searchToggle.classList.toggle("active");
+      });
+ 
+      
+//   js code to toggle sidebar
+sidebarOpen.addEventListener("click" , () =>{
+    nav.classList.add("active");
+});
+body.addEventListener("click" , e =>{
+    let clickedElm = e.target;
+    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+        nav.classList.remove("active");
+    }
+});
+</script>
 </body>
-
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<!-- JavaScript -->
-<script src="script.js"></script>
-  <!-- JavaScript -->
-  <script src="script.js"></script>
 </html>
