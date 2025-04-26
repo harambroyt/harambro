@@ -15,13 +15,6 @@ body {
   justify-content: center;
   background-color: #EFEFEF;
 }
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat',sans-serif;
-}
 nav{
   background: #151515;
   padding: 5px 40px;
